@@ -1,0 +1,52 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  // .breadcrumbs__item
+  &__item {
+    position: relative;
+
+    &:last-child {
+      pointer-events: none;
+    }
+    &:not(:last-child) {
+      color: $color-secondary;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 10px;
+        height: 10px;
+        background-image: url(../img/svg/arr-right.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  // .breadcrumbs__link
+  &__link {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: -5px;
+      left: 0;
+      z-index: 4;
+      background-color: $color-accent;
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOC</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      @@include('_svg_incloud.html') @@include('components/_header.html')
+      <div class="wrapper__content">
+        <main class="contacts-page">
+          <div class="container">
+            <ul class="breadcrumbs contacts-page__breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="/buying" class="breadcrumbs__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="contacts">
+              <div class="container">
+                <div class="contacts__inner">
+                  <img
+                    class="contacts__map map-yandex"
+                    src="../img/map.png"
+                    alt="#"
+                  />
+                  <div class="contacts__content">
+                    <h2 class="contacts__title title-lg bold">Контакты</h2>
+                    <div class="phone-number">
+                      <img
+                        class="phone-number__icon phone-number__icon-tel"
+                        src="../img/logo/phone.svg"
+                        alt="#"
+                      />
+                      <div class="phone-number__item">
+                        <a
+                          class="phone-number__link title-nr bold"
+                          href="tel:89175100323"
+                          >8 (917) 510-03-23
+                          <img
+                            class="phone-number__icon-watsapp"
+                            src="../img/logo/feedback.svg"
+                            alt="#"
+                        /></a>
+                        <span class="phone-number__text text-xsm">
+                          выкуп шин, дисков, колес (менеджер Александр)
+                        </span>
+                      </div>
+                    </div>
+                    <div class="phone-number">
+                      <img
+                        class="phone-number__icon phone-number__icon-tel"
+                        src="../img/logo/mail.svg"
+                        alt="#"
+                      />
+                      <div class="email__item">
+                        <a
+                          class="email__link title-nr bold"
+                          href="tel:8 (917) 510-03-23"
+                          >zamula_ms@mail.ru
+                        </a>
+                        <span class="phone-number__text">
+                          e-mail для заявок
+                        </span>
+                      </div>
+                    </div>
+                    <div class="phone-number">
+                      <img
+                        class="phone-number__icon phone-number__icon-tel"
+                        src="../img/logo/point.svg"
+                        alt="#"
+                      />
+                      <div class="phone-number__item">
+                        <a class="phone-number__link title-nr bold" href="#"
+                          >17-й проезд Марьиной Рощи, 13с5
+                        </a>
+                        <span class="phone-number__text text-xsm">
+                          17-й проезд Марьиной Рощи, 13с5
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="callback page-main__callback">
+            <div class="container">
+              <form class="callback__inner callback__form">
+                <div class="callback__m">
+                  <h2 class="callback__title title-lg bold">Оставьте заявку</h2>
+                  <span class="callback__subtitle"
+                    >И мы свяжемся с вами в течении рабочего дня</span
+                  >
+                </div>
+                <div class="callback__field">
+                  <input
+                    class="input__name-text custom-input"
+                    type="text"
+                    id="input__name-text"
+                    placeholder="Ваше имя"
+                  />
+                </div>
+                <div class="callback__field">
+                  <input
+                    class="input__num-val custom-input"
+                    type="tel"
+                    placeholder="Ваш телефон *"
+                  />
+                </div>
+                <div class="callback__field">
+                  <textarea
+                    class="custom-textarea"
+                    placeholder="Комментарий"
+                  ></textarea>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    class="checkbox__input"
+                    id="checkbox_1"
+                  />
+                  <label class="checkbox__label" for="checkbox_1">
+                    Я согласен(а) на обработку персональных данных
+                    <a class="checkbox__more" href="#">подробнее</a></label
+                  >
+                </div>
+                <div class="button-position">
+                  <button
+                    class="custom-btn custom-btn--danger custom-btn--md text-xsm bold"
+                  >
+                    Отправить заявку
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+      @@include('components/_footer.html')
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>

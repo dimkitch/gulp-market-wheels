@@ -1,0 +1,18 @@
+// font
+// Примнимает 4 значения
+// 1е - название по которому ты будешь обращаться к шрифту
+// 2е - фактическое название файла в папке #src/fonts
+// 3e - начертание шрифта, font-weight
+// 4e - стиль шритфа, font-style
+
+// @include font('MPLUS1p', 'MPLUS1p-Bold', '700', 'normal');
+// @include font('MPLUS1p', 'MPLUS1p-Light', '300', 'normal');
+// @include font('MPLUS1p', 'MPLUS1p-Medium', '500', 'normal');
+// @include font('MPLUS1p', 'MPLUS1p-Regular', '400', 'normal');
+// @include font('OpenSans', 'OpenSans-Bold', '700', 'normal');
+// @include font('OpenSans', 'OpenSans-Italic', '400', 'italic');
+// @include font('OpenSans', 'OpenSans-Light', '300', 'normal');
+// @include font('OpenSans', 'OpenSans-Regular', '400', 'normal');
+
+@include font('IBMPlexSans', 'IBMPlexSans-Bold', '700', 'normal');
+@include font('IBMPlexSans', 'IBMPlexSans-Regular', '400', 'normal');

@@ -1,0 +1,65 @@
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="/">
+          <img class="header__img" src="../img/logo/shinan.svg" alt=""
+        /></a>
+      </div>
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <nav class="nav color-secondary">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="/">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Скупка</a>
+            <div class="submenu-dropdown submenu-dropdown--is-visible">
+              <div class="submenu-dropdown__wrapper">
+                <a class="submenu-dropdown__link" href="buying.html"
+                  >Скупка БУ шин</a
+                >
+                <a class="submenu-dropdown__link" href="#">Скупка БУ дисков</a>
+                <a class="submenu-dropdown__link" href="#">Скупка БУ колес</a>
+                <a class="submenu-dropdown__link" href="#">Скупка Б У резины</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="news.html">Новости</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="any.html">Всякое</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="feedback">
+        <div class="feedback__content">
+          <img class="feedback__icon" src="../img/logo/feedback.svg" alt="" />
+          <div>
+            <a class="feedback__link bold" href="#"> 8 (917) 510 03 23 </a>
+            <div class="feedback__number-comment text-nr regular">
+              c 10:00 до 21:00 без выходных
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="header__btn-callback custom-btn custom-btn--danger custom-btn--md text-xsm bold"
+      >
+        Обратный звонок
+      </button>
+    </div>
+  </div>
+  <button class="header__show-more" data-js="show-full-menu">
+    <svg class="header__arrow">
+      <use xlink:href="#arrow-icon" />
+    </svg>
+  </button>
+</header>

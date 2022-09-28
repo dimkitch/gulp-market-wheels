@@ -1,0 +1,89 @@
+// xl,lg,md,nr,sm,xsm
+
+// Классы заголовков
+.title {
+  // .title-xl
+  &-xl {
+    font-size: 64px;
+    line-height: 125%;
+  }
+
+  // .title-lg
+  &-lg {
+    font-size: 56px;
+    line-height: 114%;
+  }
+
+  // .title-md
+  &-md {
+    font-size: 40px;
+    line-height: 137%;
+    @media (max-width: $breakpoint-tablet-md) {
+      font-size: 35px;
+    }
+    @media (max-width: $breakpoint-mob) {
+      font-size: 30px;
+      line-height: 160%;
+    }
+  }
+  // .title-nr
+  &-nr {
+    font-size: 32px;
+    line-height: 150%;
+  }
+  // .title-sm
+  &-sm {
+    font-size: 28px;
+    line-height: 114%;
+  }
+  // .title-xsm
+  &-xsm {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+// Классы текста
+.text {
+  // .text-md
+  &-md {
+    font-size: 20px;
+    line-height: 160%;
+  }
+  // .text-sm
+  &-sm {
+    font-size: 18px;
+    line-height: 178%;
+  }
+  // .text-xsm
+  &-xsm {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  // .text-nr
+  &-nr {
+    font-size: 12px;
+    line-height: 167%;
+  }
+}
+
+// Классы для цвета текста
+.color {
+  // .color-secondary
+  &-secondary {
+    color: $color-secondary;
+  }
+  // // .color-success
+  // &-success {
+  //   color: $color-success;
+  // }
+}
+
+.font-roboto {
+  font-family: 'Roboto';
+}
+
+// Хелперы
+.bold {
+  font-weight: 700;
+}

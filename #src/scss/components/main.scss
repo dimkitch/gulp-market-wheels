@@ -1,0 +1,646 @@
+// Header--------------------------------------------------------------------
+
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  // .wrapper__content
+  &__content {
+    margin-top: 120px;
+    @media (max-width: $breakpoint-desktop-md) and (min-width: $breakpoint-tablet+1) {
+      margin-top: 150px;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+// Intro--------------------------------------------------------------------
+
+.intro__inner {
+  margin-top: 129px;
+  display: flex;
+  align-items: flex-end;
+  flex: 0.5fr 0.3fr;
+}
+
+.intro__title {
+  margin-right: 30px;
+}
+
+.intro__suptitle {
+  text-align: left;
+}
+
+// Rubber Bg--------------------------------------------------------------------
+
+.rubber {
+  width: 100vw;
+  height: calc(100vw / 4);
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/rubberbg.png/);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-main__rubber {
+  margin-top: 72px;
+  margin-bottom: 104px;
+}
+
+// Sellrubber--------------------------------------------------------------------
+.sellrubber__inner {
+  display: grid;
+  // grid-template-columns: 630px 370px;
+  grid-template-columns: 0.5fr 0.3fr;
+  justify-content: space-between;
+}
+
+.sellrubber__item {
+  align-items: center;
+  text-align: start;
+}
+
+.sellrubber__title {
+  margin-bottom: 32px;
+}
+
+.sellrubber__text {
+  margin-bottom: 20px;
+}
+
+.sellrubber__suptitle {
+  padding-bottom: 32px;
+}
+
+.sellrubber-list__icon {
+  margin-right: 26px;
+  width: 20px;
+  height: 20px;
+}
+.sellrubber-list__item {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.sellrubber-list__item:last-child {
+  padding-bottom: 0;
+}
+
+.feedback__rubber {
+  text-align: start;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.feedback__title {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.btn-watsapp__icon {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+// Weels card --------------------------------------------------------------------
+
+.weels__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-end;
+}
+
+.weels__img {
+  align-items: flex-end;
+  display: flex;
+  width: 100%;
+  height: calc(100vw * 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.weels__img:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s linear;
+}
+
+.weels__title {
+  position: relative;
+  z-index: 2;
+  padding-left: 56px;
+  padding-bottom: 70px;
+  cursor: pointer;
+}
+
+.weels__title:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  color: #ae2c41;
+  opacity: 0;
+  background-color: #ce2742;
+  transition: all 0.2s linear;
+}
+
+.weels__title:hover:after {
+  background-color: #ae2c41;
+  opacity: 1;
+}
+
+.page-main__weels {
+  margin-top: 104px;
+  margin-bottom: 104px;
+}
+
+// Contacts--------------------------------------------------------
+
+.contacts__inner {
+  display: grid;
+  grid-template-columns: 2.8fr 1.4fr;
+  gap: 40px;
+}
+
+.contacts__map {
+  width: 50vw;
+  min-width: 50vw;
+  margin-left: (calc(((100vw - 1200px) / 2) * -1));
+  height: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contacts__title {
+  margin-bottom: 32px;
+}
+
+.contacts__content {
+  width: 100%;
+}
+
+.phone-number {
+  flex: 1 1;
+  text-align: start;
+  display: flex;
+  margin-bottom: 24px;
+}
+.phone-number__link {
+  align-items: center;
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.phone-number__icon-tel {
+  margin-top: 16px;
+  width: 20px;
+  height: 20px;
+  margin-right: 26px;
+}
+
+.phone-number__icon-watsapp {
+  margin-left: 16px;
+  width: 20px;
+  height: 20px;
+}
+
+.connect__address {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.phone-number__text {
+  color: $color-secondary;
+}
+
+.email__link {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s linear;
+}
+
+.email__link:hover {
+  color: #ce2742;
+  border-bottom: 3px solid #ce2742;
+  transition: all 0.3s linear;
+}
+
+// callback-------------------------------------------------------------------------------
+
+.callback {
+  background-image: url(../img/callback.png);
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 104px 0;
+
+  // .callback__field
+
+  &__field {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.callback.page-main__callback {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.callback__inner {
+  display: block;
+  max-width: 469px;
+}
+
+.callback__title {
+  margin-bottom: 16px;
+}
+.callback__subtitle {
+  margin-bottom: 33px;
+  color: $color-secondary;
+  margin-top: 33px;
+}
+
+.callback__m {
+  margin-bottom: 33px;
+}
+.input__name {
+  margin-bottom: 24px;
+}
+
+.input__num-text {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.button-position {
+  margin-top: 42px;
+}
+
+// Footer Logo--------------------------------------------------------------------
+.page-main__partners-block {
+  margin-bottom: 128px;
+}
+
+.partners-block__inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 58px;
+}
+
+.footer__img {
+  width: 100%;
+  height: auto;
+}
+
+// Footer--------------------------------------------------------------------
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 40px;
+}
+.custom-title {
+  font-weight: 700;
+  line-height: 171%;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.44);
+  margin-bottom: 16px;
+}
+
+.custom-text {
+  font-size: 16px;
+}
+
+.custom-text-last {
+  margin-top: 18px;
+}
+
+.footer__tell-icon {
+  margin-top: 18px;
+  display: flex;
+}
+
+.tell__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.copyright {
+  margin-top: 42px;
+  padding-bottom: 32px;
+}
+.copyright__text {
+  line-height: 171%;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+@media (max-width: $breakpoint-desktop-md) {
+  .container {
+    width: $container-max-width-desktop-md;
+  }
+  // Header---------------------------------------------------
+  .header__logo {
+    margin-right: 70px;
+  }
+
+  .feedback__number {
+    margin-left: 30px;
+  }
+  .button-header {
+    margin-left: 50px;
+  }
+  // Intro---------------------------------------------------
+  .intro__title {
+    font-size: 44px;
+    line-height: 55px;
+  }
+  // Sellruber---------------------------------------------------
+
+  .sellrubber__inner {
+    gap: 55px;
+  }
+  .sellrubber__title {
+    font-size: 44px;
+  }
+  .feedback__title {
+    font-size: 24px;
+  }
+
+  // Weels--------------------------------------------------------------
+  .weels__item {
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .weels__text {
+    font-size: 31px;
+    padding-bottom: 30px;
+  }
+  // partners-block------------------------------------------------------------
+  .partners-block__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  // Contacts------------------------------------------------------------------
+  .contacts__map {
+    margin-left: calc(((100vw - 960px) / 2) * -1);
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .container {
+    width: $container-max-width-tablet;
+  }
+
+  // Intro------------------------------------------------------------------------
+
+  .intro__title {
+    font-size: 50px;
+    line-height: 135%;
+  }
+  .intro__suptitle {
+    margin-top: 20px;
+  }
+  .intro__inner {
+    display: block;
+    margin-top: 0;
+  }
+  // Weels--------------------------------------------------------------------------
+  .weels__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .weels__item {
+    margin-bottom: 15px;
+  }
+  .weels__img {
+    height: calc(100vw * 0.5);
+  }
+  .contacts__map {
+    margin-left: calc(((100vw - 720px) / 2) * -1);
+  }
+  .sellrubber__inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .page-main__weels {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  // Sellrubber---------------------------------------------------------------
+  .sellrubber-list__item {
+    font-size: 20px;
+  }
+  // Contacts----------------------------------------------------------------
+  .contacts__inner {
+    display: block;
+  }
+  .contacts__map {
+    width: 100vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+  }
+  .phone-number__link {
+    font-size: 30px;
+  }
+  // Footer---------------------------------------------------------------------
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $breakpoint-tablet-md) {
+  .container {
+    width: $container-max-width-tablet-md;
+  }
+
+  // Header------------------------------------------------------------------------
+  .button-header {
+    display: none;
+  }
+
+  // Intro------------------------------------------------------------------------
+
+  .intro__title {
+    font-size: 35px;
+
+    margin-right: 20px;
+  }
+  .intro__suptitle {
+    padding: 0;
+  }
+  // Weels--------------------------------------------------------------------------
+  .weels__inner {
+    grid-template-columns: 1fr;
+  }
+  .weels__item {
+    margin-bottom: 15px;
+  }
+  // partners-block------------------------------------------------------------
+  .partners-block__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  // Sell-rubber-----------------------------------------------------
+  .sellrubber__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .sellrubber__title {
+    text-align: center;
+  }
+
+  .btn-watsapp__icon {
+    margin-right: 8px;
+  }
+
+  // Contacts-----------------------------------------------------------------------
+  .phone-number__link {
+    font-size: 25px;
+  }
+
+  .contacts__map {
+    margin-left: calc(((100vw - 520px) / 2) * -1);
+  }
+}
+
+@media (max-width: $breakpoint-mob) {
+  .container {
+    width: $container-max-width-mob;
+  }
+  // Header------------------------------------------------------------------------
+  .header__logo {
+    margin: 0 auto;
+  }
+  .feedback__content {
+    display: none;
+  }
+  // Intro------------------------------------------------------------------------
+  .intro__inner {
+    display: block;
+  }
+  .intro__title {
+    text-align: center;
+    font-size: 27px;
+  }
+  .intro__suptitle {
+    text-align: center;
+    margin-top: 20px;
+  }
+  // Rubber----------------------------------------------------------------------
+  .intro__suptitle {
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .page-main__rubber {
+    margin-top: 72px;
+    margin-bottom: 66px;
+  }
+  // Weels--------------------------------------------------------------------------
+  .weels__text {
+    font-size: 25px;
+    padding-bottom: 19px;
+  }
+
+  .weels__img {
+    height: calc(100vw * 1);
+  }
+
+  .page-main__weels {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  // partners-block------------------------------------------------------------
+  .partners-block__inner {
+    grid-template-columns: 1fr;
+  }
+  // Sell-rubber------------------------------------------------------------------
+
+  .sellrubber__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sellrubber__title {
+    font-size: 27px;
+    text-align: center;
+  }
+  .sellrubber__text {
+    text-align: center;
+  }
+  // Contacts-----------------------------------------------------------
+  .contacts__map {
+    margin-left: calc(((100vw - 270px) / 2) * -1);
+  }
+  .phone-number__text {
+    line-height: 150%;
+  }
+  .email__link {
+    font-size: 23px;
+  }
+  .phone-number__link {
+    font-size: 20px;
+  }
+
+  // Callback--------------------------------------------------------------------
+  .callback__inner {
+    text-align: start;
+  }
+  .callback__title {
+    font-size: 33px;
+  }
+  .page-main__callback {
+    margin-top: 65px;
+  }
+  .callback {
+    padding-top: 20px;
+    padding-bottom: 84px;
+  }
+  // Footer---------------------------------------------------------------------
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+}

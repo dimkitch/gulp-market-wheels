@@ -1,0 +1,62 @@
+/* Mixins:
+  ========================================================================== */
+
+@mixin scrollBarOff {
+  &::-webkit-scrollbar-button {
+    background-image: none;
+    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  &::-webkit-resizer {
+    background-image: none;
+    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  scrollbar-width: none;
+}
+@mixin scrollBarCustom($track, $thumb) {
+  &::-webkit-scrollbar-button {
+    background-image: none;
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $track;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $thumb;
+  }
+
+  &::-webkit-resizer {
+    background-image: none;
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+  }
+  scrollbar-width: thin;
+}

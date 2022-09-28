@@ -1,0 +1,244 @@
+// Container-----------------------------------------
+.buying-page__wrapper {
+  max-width: 770px;
+}
+
+// --------------------------------------------
+
+.buying-form__subtitle {
+  margin-bottom: 14px;
+}
+.buying-form__text {
+  margin-bottom: 42px;
+}
+
+.buying-form__inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 130px;
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.buying-form__content {
+  display: block;
+}
+
+.buying-form__images {
+  width: 50vw;
+  min-width: 50vw;
+  margin-right: calc(((100vw - 1200px) / 2) * -1);
+  height: 100%;
+  max-height: 600px;
+  object-position: center;
+  @media (max-width: $breakpoint-desktop-md) {
+    margin-right: calc(((100vw - 990px) / 2) * -1);
+  }
+  @media (max-width: $breakpoint-tablet) {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+// Price list---------------------------------------------------
+.price-list {
+  margin: 78px 0;
+}
+.price-list__container {
+  max-width: 768px;
+}
+
+.table {
+  margin-bottom: 32px;
+  margin-top: 36px;
+  width: 100%;
+  text-align: left;
+  table-layout: auto;
+  border-collapse: collapse;
+  @media (max-width: $breakpoint-mob) {
+    table-layout: fixed;
+  }
+  td,
+  th {
+    border-bottom: 1px solid $color-dark;
+    padding: 8px;
+
+    &:nth-child(1) {
+      width: 50px;
+    }
+    &:nth-child(2) {
+      width: 250px;
+      @media (max-width: $breakpoint-mob) {
+        width: 110px;
+      }
+    }
+    &:nth-child(3) {
+      width: auto;
+      @media (max-width: $breakpoint-mob) {
+        width: 220px;
+      }
+    }
+  }
+}
+.table-wrapper-scroll-x {
+  @media (max-width: $breakpoint-mob) {
+    max-width: 100%;
+    overflow-x: auto;
+    // @include scrollBarOff();
+    @include scrollBarCustom(pink, yellow);
+  }
+}
+.table__row:nth-child(even) {
+  background-color: $color-header-bg;
+}
+
+// Profit----------------------------------------------------------
+.buying-page__profit {
+  margin-top: 102px;
+  margin-bottom: 78px;
+}
+
+.profit__inner {
+  display: grid;
+  grid-template-columns: 0.6fr 0.3fr;
+  gap: 72px;
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.profit__title {
+  margin-bottom: 32px;
+}
+.profit__text-first {
+  margin-bottom: 32px;
+}
+
+.delivery {
+  max-height: 236px;
+  max-width: 328px;
+  background-color: $color-dark-coal-deep;
+  border-radius: 4px;
+  padding: 32px 40px;
+  @media (max-width: $breakpoint-mob) {
+    padding: 10px;
+  }
+}
+
+.delivery__btn {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+  @media (max-width: $breakpoint-mob) {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 32px;
+  }
+}
+.delivery__title {
+  // padding: 32px 40px;
+
+  @media (max-width: $breakpoint-mob) {
+    margin: 0;
+  }
+}
+
+// Depends----------------------------------------------------
+.buying-page__depends {
+  margin-bottom: 72px;
+}
+.depends__title {
+  margin-bottom: 24px;
+}
+.depends__link {
+  align-items: center;
+  display: flex;
+}
+.depends__link img {
+  margin-right: 18px;
+  width: 20px;
+  height: 20px;
+}
+
+.depends__link:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+// Restrictions------------------------------------------------/
+.buying-page__restrictions {
+  margin-bottom: 72px;
+}
+
+.restrictions__title {
+  margin-bottom: 24px;
+}
+
+.restrictions__link {
+  align-items: center;
+  display: flex;
+}
+
+.restrictions__link:not(:last-child) {
+  margin-bottom: 24px;
+}
+.restrictions__link img {
+  margin-right: 18px;
+  width: 20px;
+  height: 20px;
+}
+// How-pass----------------------------------------------------
+.buying-page__how-pass {
+  margin-bottom: 72px;
+}
+
+.how-pass__title {
+  margin-bottom: 24px;
+}
+
+.how-pass__list li {
+  list-style-type: decimal;
+  padding-left: 16px;
+  margin-left: 16px;
+}
+
+.how-pass__link:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+// Appraiser-call---------------------------------------------------
+
+.appraiser-call__inner {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  min-height: 128px;
+  padding: 32px 40px;
+  background-color: $color-header-bg;
+  @media (max-width: $breakpoint-mob) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 10px;
+  }
+}
+
+.appraiser-call__btn {
+  @media (max-width: $breakpoint-mob) {
+    width: 100%;
+  }
+}
+
+.appraiser-call__text {
+  max-width: 477px;
+}
+
+.appraiser-call__comment {
+  margin-top: 24px;
+}
